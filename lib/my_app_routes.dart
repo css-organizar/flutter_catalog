@@ -5,7 +5,6 @@ import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/routes/networking_chatgpt_ex.dart';
 import 'package:flutter_catalog/routes/networking_hacker_news_ex.dart';
-import 'package:flutter_catalog/routes/plugins_webview_ex.dart';
 import 'package:flutter_catalog/routes/richtext_quill_ex.dart';
 import 'package:flutter_catalog/routes/richtext_supereditor_ex.dart';
 import 'package:flutter_catalog/routes/state_scoped_model_ex.dart';
@@ -872,12 +871,6 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
     groupName: 'Plugins',
     icon: Icon(Icons.power),
     routes: <MyRoute>[
-      MyRoute(
-        child: WebViewExample(),
-        sourceFilePath: 'lib/routes/plugins_webview_ex.dart',
-        title: 'Web View',
-        description: 'Open web page inside Flutter app.',
-      ),
       MyRoute(
         child: LocalAuthExample(),
         sourceFilePath: 'lib/routes/plugins_local_auth_ex.dart',

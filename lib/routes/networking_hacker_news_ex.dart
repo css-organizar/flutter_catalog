@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
@@ -102,24 +101,6 @@ class _RestApiHackerNewsExampleState extends State<RestApiHackerNewsExample> {
       subtitle: Text(
         '${article.by} - '
         '${formatter.format(createdAt)}',
-      ),
-      trailing: IconButton(
-        icon: const Icon(Icons.open_in_new),
-        onPressed: () async {
-          if (await url_launcher.canLaunchUrl(Uri.parse(article.url!))) {
-            if (context.mounted) {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (ctx) => WebviewScaffold(
-                    initialChild: const Center(child: CircularProgressIndicator()),
-                    url: article.url!,
-                    appBar: AppBar(title: Text(article.title!)),
-                  ),
-                ),
-              );
-            }
-          }
-        },
       ),
     );
   }

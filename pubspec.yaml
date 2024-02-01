@@ -54,7 +54,8 @@ dependencies:
   flutter_riverpod:
   flutter_slidable:
   flutter_state_notifier:
-  flutter_webview_plugin: ^0.4.0
+  # flutter_webview_plugin: ^0.4.0
+  # flutter_webview_plugin_ios_android: ^0.3.13+12
   flutter_whatsnew:
     path: packages/flutter_whatsnew-master
   flutterfire_ui:
