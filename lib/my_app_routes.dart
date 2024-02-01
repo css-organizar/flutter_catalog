@@ -5,7 +5,6 @@ import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/routes/networking_chatgpt_ex.dart';
 import 'package:flutter_catalog/routes/networking_hacker_news_ex.dart';
-import 'package:flutter_catalog/routes/richtext_quill_ex.dart';
 import 'package:flutter_catalog/routes/richtext_supereditor_ex.dart';
 import 'package:flutter_catalog/routes/state_scoped_model_ex.dart';
 import 'constants.dart';
@@ -906,13 +905,6 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
         title: 'Selectable package',
         description: "Make any widget's text selectable, and define custom selection menus.",
         links: {'pub.dev': 'https://pub.dev/packages/selectable'},
-      ),
-      MyRoute(
-        child: QuillExample(),
-        sourceFilePath: 'lib/routes/richtext_quill_ex.dart',
-        title: 'Quill',
-        description: 'Rich text editor',
-        links: {'pub.dev': 'https://pub.dev/packages/flutter_quill'},
       ),
       MyRoute(
         child: SuperEditorExample(),

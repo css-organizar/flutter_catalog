@@ -49,7 +49,7 @@ dependencies:
   flutter_heatmap_calendar:
   flutter_highlight:
   flutter_markdown:
-  flutter_quill:
+  # flutter_quill:
   flutter_radar_chart:
   flutter_riverpod:
   flutter_slidable:
