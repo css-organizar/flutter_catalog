@@ -17,7 +17,8 @@ dependencies:
   badges:
   cached_network_image:
   community_charts_flutter:
-  chat_gpt_sdk:
+  chat_gpt_sdk: 2.0.0
+  material_buttonx:
   cloud_firestore:
   cloud_firestore_web:
   community_material_icon:
@@ -48,12 +49,12 @@ dependencies:
   flutter_heatmap_calendar:
   flutter_highlight:
   flutter_markdown:
-  # flutter_quill:
+  flutter_quill:
   flutter_radar_chart:
   flutter_riverpod:
   flutter_slidable:
   flutter_state_notifier:
-  # flutter_webview_plugin:
+  flutter_webview_plugin: ^0.4.0
   flutter_whatsnew:
     path: packages/flutter_whatsnew-master
   flutterfire_ui:
@@ -95,7 +96,7 @@ dependencies:
   sqflite:
   state_notifier:
   substring_highlight:
-  # super_editor: ^0.2.2 TODO: add back when it depends on http ^1.0.0
+  super_editor:
   transparent_image:
   tuple:
   url_launcher:

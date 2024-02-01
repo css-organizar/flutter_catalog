@@ -3,6 +3,12 @@
 // ignore_for_file: sort_child_properties_last
 import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/routes/networking_chatgpt_ex.dart';
+import 'package:flutter_catalog/routes/networking_hacker_news_ex.dart';
+import 'package:flutter_catalog/routes/plugins_webview_ex.dart';
+import 'package:flutter_catalog/routes/richtext_quill_ex.dart';
+import 'package:flutter_catalog/routes/richtext_supereditor_ex.dart';
+import 'package:flutter_catalog/routes/state_scoped_model_ex.dart';
 import 'constants.dart';
 import 'home_page.dart';
 import 'my_route.dart';
@@ -797,16 +803,16 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
           'Youtube': 'https://www.youtube.com/watch?v=4I68ilX0Y24',
         },
       ),
-      // MyRoute(
-      //   child: ScopedModelExample(),
-      //   sourceFilePath: 'lib/routes/state_scoped_model_ex.dart',
-      //   title: 'ScopedModel(deprecated)',
-      //   description: 'Access&mutate state of widgets up the tree.',
-      //   links: {
-      //     "I/O'18 talk": 'https://youtu.be/RS36gBEp8OI?t=680',
-      //     'Youtube': 'https://www.youtube.com/watch?v=-MCeWP3rgI0',
-      //   },
-      // ),
+      MyRoute(
+        child: ScopedModelExample(),
+        sourceFilePath: 'lib/routes/state_scoped_model_ex.dart',
+        title: 'ScopedModel(deprecated)',
+        description: 'Access&mutate state of widgets up the tree.',
+        links: {
+          "I/O'18 talk": 'https://youtu.be/RS36gBEp8OI?t=680',
+          'Youtube': 'https://www.youtube.com/watch?v=-MCeWP3rgI0',
+        },
+      ),
       MyRoute(
         child: BlocExample(),
         sourceFilePath: 'lib/routes/state_bloc_ex.dart',
@@ -866,12 +872,12 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
     groupName: 'Plugins',
     icon: Icon(Icons.power),
     routes: <MyRoute>[
-      // MyRoute(
-      //   child: WebViewExample(),
-      //   sourceFilePath: 'lib/routes/plugins_webview_ex.dart',
-      //   title: 'Web View',
-      //   description: 'Open web page inside Flutter app.',
-      // ),
+      MyRoute(
+        child: WebViewExample(),
+        sourceFilePath: 'lib/routes/plugins_webview_ex.dart',
+        title: 'Web View',
+        description: 'Open web page inside Flutter app.',
+      ),
       MyRoute(
         child: LocalAuthExample(),
         sourceFilePath: 'lib/routes/plugins_local_auth_ex.dart',
@@ -908,20 +914,20 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
         description: "Make any widget's text selectable, and define custom selection menus.",
         links: {'pub.dev': 'https://pub.dev/packages/selectable'},
       ),
-      // MyRoute(
-      //   child: QuillExample(),
-      //   sourceFilePath: 'lib/routes/richtext_quill_ex.dart',
-      //   title: 'Quill',
-      //   description: 'Rich text editor',
-      //   links: {'pub.dev': 'https://pub.dev/packages/flutter_quill'},
-      // ),
-      // MyRoute(
-      //   child: SuperEditorExample(),
-      //   sourceFilePath: 'lib/routes/richtext_supereditor_ex.dart',
-      //   title: 'SuperEditor',
-      //   description: 'Another rich text editor',
-      //   links: {'pub.dev': 'https://pub.dev/packages/super_editor'},
-      // ),
+      MyRoute(
+        child: QuillExample(),
+        sourceFilePath: 'lib/routes/richtext_quill_ex.dart',
+        title: 'Quill',
+        description: 'Rich text editor',
+        links: {'pub.dev': 'https://pub.dev/packages/flutter_quill'},
+      ),
+      MyRoute(
+        child: SuperEditorExample(),
+        sourceFilePath: 'lib/routes/richtext_supereditor_ex.dart',
+        title: 'SuperEditor',
+        description: 'Another rich text editor',
+        links: {'pub.dev': 'https://pub.dev/packages/super_editor'},
+      ),
       MyRoute(
         child: CodeHighlightExample(),
         sourceFilePath: 'lib/routes/richtext_code_highlight_ex.dart',
@@ -1007,13 +1013,13 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
         title: 'Sending data',
         links: {'Cookbook': 'https://flutter.dev/docs/cookbook/networking/send-data'},
       ),
-      // MyRoute(
-      //   child: RestApiHackerNewsExample(),
-      //   sourceFilePath: 'lib/routes/networking_hacker_news_ex.dart',
-      //   title: 'Hacker News',
-      //   description: 'A full REST API example.',
-      //   links: {'Hacker News API': 'https://github.com/HackerNews/API'},
-      // ),
+      MyRoute(
+        child: RestApiHackerNewsExample(),
+        sourceFilePath: 'lib/routes/networking_hacker_news_ex.dart',
+        title: 'Hacker News',
+        description: 'A full REST API example.',
+        links: {'Hacker News API': 'https://github.com/HackerNews/API'},
+      ),
       MyRoute(
         child: RestApiGoogleBooksExample(),
         sourceFilePath: 'lib/routes/networking_googlebooks_ex.dart',
@@ -1021,13 +1027,13 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
         description: 'Another REST example using the Google books seach API.',
         links: {'Hacker News API': 'https://github.com/HackerNews/API'},
       ),
-      // MyRoute(
-      //   child: ChatGptExample(),
-      //   sourceFilePath: 'lib/routes/networking_chatgpt_ex.dart',
-      //   title: "ChatGPT",
-      //   description: 'Interact with ChatGPT in Flutter',
-      //   links: {'pub.dev': 'https://pub.dev/packages/chat_gpt_sdk'},
-      // ),
+      MyRoute(
+        child: ChatGptExample(),
+        sourceFilePath: 'lib/routes/networking_chatgpt_ex.dart',
+        title: "ChatGPT",
+        description: 'Interact with ChatGPT in Flutter',
+        links: {'pub.dev': 'https://pub.dev/packages/chat_gpt_sdk'},
+      ),
     ],
   ),
   MyRouteGroup(
